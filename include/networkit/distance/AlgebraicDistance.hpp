@@ -42,6 +42,8 @@ public:
 
      std::vector<double> getEdgeScores() override;
 
+     std::vector<double> getLoads();
+
 private:
 
     /**

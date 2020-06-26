@@ -11846,6 +11846,7 @@ cdef extern from "<networkit/distance/AlgebraicDistance.hpp>":
 		void preprocess() except +
 		double distance(node, node) except +
 		vector[double] getEdgeScores() except +
+		vector[double] getLoads() except +
 
 
 cdef class AlgebraicDistance:
@@ -11890,6 +11891,8 @@ cdef class AlgebraicDistance:
 	def getEdgeScores(self):
 		return self._this.getEdgeScores()
 
+	def getLoads(self):
+		return self._this.getLoads()
 
 cdef class JaccardSimilarityAttributizer:
 	"""

@@ -142,4 +142,8 @@ std::vector<double> AlgebraicDistance::getEdgeScores() {
     return edgeScores;
 }
 
+std::vector<double> AlgebraicDistance::getLoads() {
+    return loads;
+}
+
 } /* namespace NetworKit */
